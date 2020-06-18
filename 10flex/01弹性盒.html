@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+        margin: 0;    
+        padding: 0;
+        list-style: none;
+        }
+        ul{
+            width: 500px;
+            border: 1px red solid;
+            display: flex;
+            /* flex-direction: row; */
+            flex-wrap: wrap;
+        }
+        /* f1ex- direction指定容器中弹性元素的排列方式
+            可选值
+                row默认值，弹性元素在容器中水平排列（左向右）
+                row-reverse弹性元素在容器中反向水平排列（右向左）
+                column弹性元素纵向排列（自上向下）
+                column-reverse弹性元素方向纵向排列（自下向上）
+            主轴
+                弹单性元素的排列方向称为主轴
+            侧轴
+                与主轴垂直方向的称为侧轴 
+        */
+        li{
+            width: 200px;
+            line-height: 100px;
+            background-color: #bfa;
+            text-align: center;
+            font-size: 50px;
+            flex-shrink: 0;
+            /* flex-grow: 1; */
+           
+            /* 元素的属性
+                f1ex-grow指定弹性元素的伸展的系数
+                当父元素有多余空间的时，子元素如何伸展
+                父元素的乘除空间，会按照比例进行分配
+             */
+        }
+        li:nth-child(1){
+            background-color:#bfa;
+            /* flex-grow: 1; */
+          
+          
+        }
+        li:nth-child(2){
+            background-color: pink;
+            /* flex-grow: 2;} */
+        }
+     
+            li:nth-child(3){
+            background-color: orange;
+            /* flex-grow: 3; */
+        }
+    </style>
+</head>
+<body>
+            <!-- f1ex（弹性盒、伸缩盒）
+                是CSs中的又一种布局手段，它主要用来代替浮动来完成页面的布局
+                弹性容器
+                    要使用弹性盒，必须先将一个元素设置为弹性容器
+                    我们通过 display来设置弹性容器
+                    display:f1ex设置为块级弹性容器
+                    display:inline-f1ex设置为行内的弹性容器
+                弹性元素
+                    弹性容器的子元素是弹性元素（弹性项）
+                    元素可以同时是弹性容器和弹性元素
+             -->
+ <ul>
+     <li>1</li>
+     <li>2</li>
+     <li>3</li>
+ </ul>
+</body>
+</html>

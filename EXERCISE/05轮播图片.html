@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../Layout/reset.css">
+    <style>
+        /*容器*/
+        .img-list{
+            width: 1180px;
+            height: 940px;
+            margin:100px auto;
+            position: relative;
+        }
+        .img-list li{
+            position: absolute;
+        }
+        .img-list li:nth-child(2){
+            z-index: 1;
+        }
+        .pointer a{
+        float: left;/**/
+            width: 20px;
+            height: 20px;
+            background-color:rgba(255,255,255, .6);
+            border-radius: 50%;
+            margin: 0px 15px;
+            background-clip: content-box;
+            border: 2px solid rgba(255, 255,255, .3);
+        }
+        
+        .pointer{
+            position: absolute;
+            z-index: 9999;
+            bottom: 40px;
+          left: 40px;
+        }
+        .pointer a.active,.pointer a:hover{
+            background-color: #fff;
+            border: 2px solid rgba(255, 255,255, .3);
+        }
+
+    </style>
+</head>
+<body>
+    <ul class="img-list">
+        <li><a href="#"><img src="./素材/3.jpg" alt=""></a></li>
+        <li><a href="#"><img src="./素材/4.jpg" alt=""></a></li>
+        <li><a href="#"><img src="./素材/5.jpg" alt=""></a></li>
+        <div class="pointer">
+            <a class="active" href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+        </div>
+        
+        
+        
+        
+    </ul>
+    
+</body>
+</html>

@@ -1,0 +1,22 @@
+.clear::before,
+.clear::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+/* 公共样式 */
+body{
+    font:14px/1.5 Helvetica Neue,Helvetica,Arial,Microsoft Yahei,Hiragino Sans GB,Heiti SC,WenQuanYi Micro Hei,sans-serif;
+    color: #fff;
+    min-width: 1226px;
+  
+}
+.w{
+    
+    max-width:1226px ;
+    margin: 0 auto;
+}

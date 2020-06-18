@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <style>
+      .pink{
+          color: pink;
+            width: 200px;
+            height: 200px;
+           
+
+          background-color: skyblue;
+          border-width: 10px;
+          border-top-color:gray;
+          border-right-color: greenyellow;
+          border-bottom-color:orangered;
+          border-left-color:tomato;
+          border-style: double;
+
+          border: solid 10px orange;;
+
+          padding:100px 100px 100px 100px ;
+      }
+      /*
+      边框
+        宽度 border-width 
+            可以指定四个方向的宽度（顺时针）三个值：上 左右 下
+
+        颜色 border-color
+
+        样式 border-style
+            solid 实线
+            dotted 点状虚线
+            dashed 虚线
+            double 双线
+      
+      
+      */
+      /*内边距 内容和边框之间的距离是内边距，有四个方向的内边距
+                padding-top
+                padding-right
+                padding-bottom
+                padding-left
+                它会影响盒子大小
+
+      
+      
+      
+      
+      */
+        .inner{
+            width: 100%;
+            height: 100%;
+            background-color: yellow;
+        }
+  </style>
+</head>
+<body>
+
+    <!--
+            css将所有元素都设置成了一个矩形的盒子
+            组成：内容区 content
+                  内边距 padding
+                  边框 border
+                  外边框 margin
+                width设置内容区宽度
+                height 设置高度
+    -->
+
+
+    <img src="../HTML/img/1.JPG"  height="300px" alt="动漫">
+    
+
+
+    <div class="pink">
+        古风
+     <div class="inner">动漫</div>
+  
+        </div>
+    
+    
+    
+    
+    
+</body>
+</html>

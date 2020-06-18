@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html{
+            perspective:800px ;
+        }
+        .CUBE{
+            width: 200px;
+            height: 200px;
+            margin: 100px auto;
+            
+            /* transform: rotateX(45deg) rotateZ(45deg); */
+            transform-style: preserve-3d;
+            animation: rotate 20s infinite;
+        }
+        .CUBE>div{
+            opacity: 0.5;
+            position: absolute;
+            
+        }
+   img{
+       vertical-align: top;
+   }
+   .box1{
+       transform: rotateY(90deg) translateZ(100px);
+   }
+   .box2{
+       transform: rotateY(-90deg) translateZ(100px);
+   }
+   .box3{
+       transform: rotateX(90deg) translateZ(100px);
+   }
+   .box4{
+    transform: rotateX(-90deg) translateZ(100px)
+   }
+   .box5{
+        transform:rotateY(180deg) translateZ(100px);
+   }
+   .box6{
+    transform: rotateY(0deg) translateZ(100px);
+   }
+   @keyframes rotate {
+       from{
+           transform: rotateX(0) rotateZ(0);
+       }
+       to{
+           transform: rotateX(1TURN) rotateZ(1TURN);
+       }
+   }
+    </style>
+</head>
+<body>
+    <div class="CUBE">
+        <div class="box1">
+            <img src="./素材/A2.jpg " width="200"height="200" alt="">
+        </div>
+        <div class="box2">
+            <img src="./素材/A3.jpg " width="200"height="200" alt="">
+        </div>
+        <div class="box3">
+            <img src="./素材/A4.jpg " width="200"height="200" alt="">
+        </div>
+        <div class="box4">
+            <img src="./素材/A5.jpg " width="200"height="200" alt="">
+        </div>
+        <div class="box5">
+            <img src="./素材/A6.jpg " width="200"height="200" alt="">
+        </div>
+        <div class="box6">
+            <img src="./素材/A7.jpg " width="200"height="200" alt="">
+        </div>
+     </div>
+</body>
+</html>

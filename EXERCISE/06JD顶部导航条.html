@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JD</title>
+    <link rel="stylesheet" href="../03Layout/reset.css">
+    <link rel="stylesheet" href="../06font&bg/fontawesome/css/all.css">
+    <style>
+        /* 设置字体/大小 */
+        body{
+            font: 12px/1.5 微软雅黑 ;
+        }
+    /* 防止高度塌陷 */
+        .clearfix::before,
+        .clearfix::after{
+            content: '';
+            display:table;
+            clear: both;
+        }
+
+    /* 外部样式 */
+        .top-bar-wrapper{
+                /* 背景宽度 */
+                width: 100%;
+                /* 背景颜色 */
+                background-color: #e3e4e5;
+                /* 设置下边框 */
+                border-bottom: 1px solid #ddd;
+                 /* 行高 */
+                line-height: 30px;
+                height: 30px;
+        }
+
+        /* 内部样式 */
+        .top-bar{
+            width: 1190px;
+            /* 固定宽度 */
+            margin: 0 auto;
+            /* 水平居中 */
+        }
+
+        .top-bar a,.top-bar span ,.top-bar i{
+            /* 设置字体颜色 */
+            color: #999 ;
+            /* 去掉下划线 */
+            text-decoration: none;
+         }
+
+         .location{
+             /* 向左浮动 */
+             float: left;
+         }
+
+
+         .location .city-list{
+             display: none;
+             width: 320px;
+             height: 430px;
+             background-color: WHITE;
+             border: 1px solid rgb(204, 204, 204);
+            /* 设置决对定位 */
+            position: absolute;
+         }
+         .location:hover .city-list{
+             /* 鼠标移到location时 让city-list显示 */
+             display: block;
+         }
+        
+         .current-city:hover{
+             background-color: white;
+            
+         }
+         .current-city{
+             padding: 0 10px;
+             border: 1px solid rgb(204, 204, 204) ;
+             border-bottom: none;
+         }
+
+         .shortcut .one ,.two ,.three ,.four{
+            display: none;
+             width: 100px;
+             height: 150px;
+             background-color: white;
+             border: 1px solid rgb(204, 204, 204);
+            /* 设置决对定位 */
+            position: absolute;
+
+         }
+         /* .shortcut .one, .two,.three ,.four:hover{
+            display: block;
+
+         } */
+         .shaw:hover .one{
+            display: block;
+         }
+         .tom:hover .two{
+            display: block;
+         }
+         .bob:hover .three{
+            display: block;
+         }
+         .dave:hover .four{
+            display: block;
+         }
+         /* 图标颜色 */
+         .location .fas{
+            color:#f10215;
+         }
+
+         .top-bar a:hover,
+         .top-bar a.highlight{
+             /* 设置预览效果和高亮效果 */
+                color: #f10215;
+         }
+         .shortcut{
+            /* 简介部分向右浮动 */
+             float: right;
+         }
+
+         .shortcut .line{
+             /* 设置分割线 */
+             width: 1px;
+             height: 10px;
+          background-color: #999;
+          margin: 10px 12px  ;
+
+         }
+         .shortcut li{
+             /* 简介的内容在简介的框里向左浮动 */
+             float:left;
+         }
+
+   
+    </style>
+</head>
+<body>
+    <div class="top-bar-wrapper">
+        <div class="top-bar clearfix">
+
+            <div class="location">
+               
+                <div class="current-city ">
+                    <i class="fas fa-location-arrow"></i>
+                    <a href="#">BeiJing</a></div>
+
+                    <div class="city-list"></div>
+            </div>
+
+           
+            <ul class="shortcut">
+                    <li>
+                        <a href="#">Sign in</a>
+                        <a class="highlight" href="#">Sign up</a>
+                    </li>
+
+                    <li class="line"></li>
+                    <li><a href="#">My Package</a></li>
+
+                    <li class="line"></li>
+                    <li class="shaw" >
+                        
+                        <a  href="#">My JD</a>
+                        <i class="fas fa-arrow-down"></i>
+                        <div class="one"></div>
+                    </li>
+
+                    <li class="line"></li>
+                    <li ><a href="#">JD's vip</a></li>
+
+                    <li class="line"></li>
+                    <li class="tom">
+                        <i class="B"></i>
+                        <a  class="highlight" href="#">Enterprise procurement </a>
+                        <i class="fas fa-arrow-down"></i>
+                        <div class="two"></div>
+                    </li>
+
+                    <li class="line"></li>
+                    <li class="bob">
+                        <i class="C"></i>
+                        <span >Customer service</span>
+                        <i class="fas fa-arrow-down"></i>
+                        <div class="three"></div>
+
+                    </li>
+
+                    <li class="line"></li>
+                    <li class="dave">
+                        <span class="d">Web nav</span>
+                        <i class="D"></i>
+                        <i class="fas fa-arrow-down"></i>
+                        <div class="four"></div>
+                    </li>
+
+                    <li class="line"></li>
+                    <li>
+                        <span>Phone-jd</span>
+                    </li>
+
+               
+
+            </ul>
+            
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+.box1{
+    .box2{
+        color: red;
+    }
+    >.box3{
+        color: red;
+    }
+    &:hover{
+        color: orange;
+    }
+}
+.p1{
+    width: 50px;
+    height: 50px;
+}
+//extend（）对当前选择器扩展指定选择器的样式（选择器分组
+.p2:extend(.p1){
+    color: red;
+}
+
+.p3{
+    .p1()
+}
+.p4(){
+    width: 400px;height: 500px;
+    background-color: #bfa;
+}
+//使用类选择器时可以在选择器后边添加一个括号，这时我们实际上就创建了一个mixins
+.p5{
+    .p4;
+}
+
+.test(@w,@h){
+    width: @w;
+    height: @h;
+}
+div{
+    .test(400px,300px)
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 在现实生活中表单用于提交数据
+            在网页中也可以使用表单，网页中的表单用于将本地的数据提交给远程的服务器
+            使用form标签来创建一个表单 
+    -->
+    <!-- form的属性
+        action表单要提交的服务器的地址 
+    -->
+    <form action="./target.html">
+        <!--文本框
+        注意：数据要提交到服务器中，必须要为元素指定一个name属性-->
+       账号 <input type="text" name="username">
+ 
+        <br>
+        <br>
+         <!--密码框-->
+       密码 <input type="password" name="password">
+        <br>
+        <br>
+        <!-- 单选按钮
+        像这种选择框，必须要指定一个 value属性， value属性最终会作为用户的填写的值
+        checked可以将单选按钮设置为默认选中 
+        -->
+        按钮<input type="radio"name="anniu" value="a">
+        <input type="radio"name="anniu"value="b">
+        
+        <br><br>
+
+        多选框<input type="checkbox"name="test"value="1">
+        <input type="checkbox"name="test"value="1">
+    <input type="checkbox"name="test"value="1">
+           <br>
+           <br>
+    <select name="haha" id="">
+                <option value="1">选项1</option>
+                <option value="2">选项2</option>
+                <option value="3">选项3</option>
+            </select>
+    <!--提交按钮-->
+             <br>
+             <br>
+        <input type="submit"value="sign up">
+    </form>
+
+</body>
+</html>

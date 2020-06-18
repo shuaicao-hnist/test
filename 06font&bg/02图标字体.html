@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./fontawesome/css/all.css">
+    <link rel="stylesheet" href="./iconfont/font_1877350_kvyis1lldn/iconfont.css">
+    <style>
+        li{
+            list-style: none;
+        }
+        nav{
+            list-style: none;
+        }
+        li::before{
+            content: '\f188';
+            font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+    /* font-family: 'Font Awesome 5 Brands'; */
+  
+  color: blue;
+  margin-right: 10px;
+        }
+        nav::before{
+            content: '\f188';
+            font-family: 'Font Awesome 5 Brands';
+            margin-right: 100px;
+        }
+        div{
+            margin-right: 100px;
+        }
+    </style>
+</head>
+<body>
+<!--
+    iconfont
+        网页中需使用图标，可以将图标设置为字体
+            然后通过font-face来对字体进行引入、
+    fontawesome
+        通过类名来使用图标字体
+            class-“fas/fab fa-bell”类名
+    
+            通过伪元素来设置图标字体
+        1.找到要设置图标的元素通过 before或 after选中
+        2.在 content中设置宇体的编码
+        3.设置字体的样式
+        fab
+        font-family：' Font Awesome 5 Brands'：
+       
+        fas
+        font-family：'Font Awesome 5 Free'
+        font-weight：900
+-->    
+    <!-- <i class="fas fa-bell "style="font-size:80px"></i>
+    <i class="fab fa-accessible-icon"></i>
+    <i class="fas fa-cat"></i> -->
+    <ul>
+        <li>春眠不觉晓</li>
+        <li>处处闻啼鸟</li>
+        <li>夜来风雨声</li>
+        <li>花落知多少</li>
+        
+    </ul>
+    <!-- 通过实体来使用图标字体：
+&#x图标的编码; -->
+<!-- <span class="fab">&#xf368;</span> -->
+<span class="fas">&#xe615;</span>
+
+<ul>
+    <li>春眠不觉晓</li>
+    <li>处处闻啼鸟</li>
+    <li>夜来风雨声</li>
+    <li>花落知多少</li>
+    
+</ul>
+
+
+
+</body>
+</html>

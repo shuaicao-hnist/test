@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+        [属性名]选择含有指定属性的元素
+        [属性名=属性值]指定属性和属性值的元素
+        [属性名^=属性值]以指定值开头的元素
+        [属性名$=属性值]以属性值结尾的元素
+        [属性名*=属性值]含有某值的元素
+        */
+
+        p[title]{
+            color: orange;
+        }
+        p[title*=b]{
+            color: orangered;
+        }
+    </style>
+</head>
+<body>
+    <p title="第一句">少小离家老大回</p>
+
+    <p title="岳阳楼记">先天下之忧而忧</p>
+
+ 
+    <p title="abc">后天下之乐而乐</p>
+</body>
+</html>

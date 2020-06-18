@@ -1,0 +1,75 @@
+.left-menu:hover .nav {
+  display: block;
+}
+.left-menu .nav {
+  position: absolute;
+  /* width: 70px; */
+  /* top: 48px; */
+  background-color: #000;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 48px;
+  display: none;
+}
+.left-menu .nav li {
+  width: 80%;
+  margin: 0 auto;
+  border-bottom: 1px solid #dbdbdb;
+}
+.left-menu .nav li a {
+  line-height: 44px;
+  display: block;
+  font-size: 14px;
+  text-decoration: none;
+  color: #ffffff;
+}
+.left-menu .nav li span {
+  text-decoration: none;
+  color: #ffffff;
+}
+.left-menu .nav li:last-child a {
+  display: inline-block;
+}
+.left-menu .menu-icon {
+  width: 18px;
+  height: 48px;
+  position: relative;
+}
+.left-menu .menu-icon li {
+  position: absolute;
+  transform-origin: left center;
+  transition: 0.5s;
+  height: 1px;
+  width: 18px;
+  background-color: #ffffff;
+}
+.left-menu .menu-icon li:nth-child(1) {
+  top: 18px;
+}
+.left-menu .menu-icon li:nth-child(2) {
+  top: 23px;
+}
+.left-menu .menu-icon li:nth-child(3) {
+  top: 29px;
+}
+.left-menu .menu-icon:hover li:nth-child(1) {
+  transform: rotateZ(35deg);
+}
+.left-menu .menu-icon:hover li:nth-child(2) {
+  opacity: 0;
+}
+.left-menu .menu-icon:hover li:nth-child(3) {
+  transform: rotateZ(-35deg);
+}
+@media only screen and (min-width: 768px) {
+  .left-menu {
+    order: 2;
+  }
+  .logo {
+    order: 1;
+  }
+  .user-info {
+    order: 3;
+  }
+}

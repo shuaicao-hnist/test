@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-size: 60px;
+        }
+        .box1{
+            width: 100px;
+            height: 100px;
+            background-color: #bfa;
+            
+        }
+        .box2{
+            width: 100px;
+            height: 100px;
+            background-color:orange;
+            position: relative;
+            left: 100px;
+            top: -100px;
+        }
+        .box3{
+            width: 100px;
+            height: 100px;
+            background-color:yellow;
+            position: relative;
+            left: 200px;
+            top: -200px;
+        }
+             /*
+             定位（ position
+                    定位是一种更加高级的布局手段
+                    通过定位可以将元素摆放到页面的任意位置
+                    使用 position属性来设置定位
+                        可选值：
+                        static默认值，元素是静止的没有开启定位
+                        relative开启元素的相对定位
+                            1.开启相对定位以后，如果不设置偏移量元素
+                            不会发生任何的变化
+                            2.相对定位是参照于元素在文档流中的位置进行定位
+                            3.会提升元素的层级
+                            4.不会时元素脱离文档流
+                            5.不会改变元素的性质
+                        absolute开启元素的绝对定位
+                        Fixed开启元素的固定
+                        sticky开启元素的粘滞定位
+
+                    偏移量（ offset
+                    当元素开启了定位以后，可以通过偏移量来设置元素的位置
+                    top
+                        定位元素和定位位置上边的距离
+                    left
+                    bottom
+                    right
+            */
+
+    </style>
+</head>
+<body>
+    <div class="box1">1</div>
+    <div class="box2">2</div>
+    <div class="box3">3</div>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+        margin: 0;    
+        padding: 0;
+        list-style: none;
+        }
+        ul{
+            width: 800px;
+            border: 1px red solid;
+            display: flex;
+            flex-direction: row;
+            /* f1ex-f1ow:wap和 direction的简写属性
+                flex-flow:row wrap：; 
+               flex-wrap
+                设置弹性元素是否在弹性容器中自动换行
+                可选值
+                nowrap默认值，元素不会自动换行
+                wap元素沿着辅轴方向自动换行
+                wrap-reverse元素沿着辅轴反方向换行 
+            */
+        }
+
+           
+        li{
+            width: 100px;
+            line-height: 100px;
+            background-color: #bfa;
+            text-align: center;
+            font-size: 50px;
+            /* flex-grow: 1; */
+            }
+        li:nth-child(1){
+            background-color:#bfa;
+            flex-grow: 1;
+            order: 3;
+        }
+        li:nth-child(2){
+            background-color: pink;
+            flex-grow: 2;
+            order:2;}
+     
+            li:nth-child(3){
+            background-color: orange;
+            flex-grow: 3;
+            order: 1;}
+            /* justify-content: 如何分配主轴上的空白空间（主轴上的元素如何排列）
+                  
+                    可选值：
+                    f1ex- start元素沿着主轴起边排列
+                    f1ex-end元素沿着主轴终边排列
+                    center元素居中排列
+
+                    space- around空白分布到元素两侧
+                    space- between空白均匀分布到元素间
+                    space-evently空白分布到元素的单例 
+            */
+
+            /* align-items：元素在辅轴上如何对齐
+                
+                    元素间的关系
+                    可选值
+                    stretch默认值，将元素的长度设置为相同的值
+                    f1ex-start元素不会拉伸，沿着辅轴起边对齐
+                    f1ex-end沿着辅轴的终边对齐
+                    center居中对齐
+
+                    align-content：辅轴空白空间的分布 
+                    align-content:space-between
+
+            元素基础长度
+                    f1ex- basis指定的是元素在主轴上的基础长度
+                    如果主轴是横向的则该值指定的就是元素的宽度
+                    如果主轴是纵向的则该值指定的是就是元素的高度
+                    默认值是auto，表示参考元素自身的高度或宽度
+
+                    简写属性：增长 缩减 基础
+                    flex: 1 1 auto
+            */
+    </style>
+</head>
+<body>
+
+
+ <ul>
+     <li>1</li>
+     <li>2</li>
+     <li>3</li>
+ </ul>
+</body>
+</html>

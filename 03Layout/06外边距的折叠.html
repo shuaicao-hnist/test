@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1 , .box2{
+            width: 200px;
+            height: 200px;
+
+        }
+
+        /*
+        垂直外边距的重叠（折叠）
+            相邻的垂直方向外边距会发生重叠现象
+            兄弟元素
+                 兄弟元素间的相邻垂直外边距会取两者之间的较大值（两者都是正值）
+                    如果相邻的外边距一正一负，则取两者的和
+                    如果相邻的外边距都是负值，则取两者中绝对值较大的
+        
+            兄弟元素之间的外边距的重叠，对于开发是有利的，所以我们不需要进行处理
+            
+            父子元素
+                父子元素间相邻外边距，子元素的会传递给父元素（上外边距）
+
+
+
+             行内元素的盒横型
+                行内元素不支持设置宽度和高
+                行内元素可以设置 padding，但是垂直方向 padding不会影响页面的布局
+                行内元素可以设置 border，垂直方向的 border不会影响页面的布局
+                行内元素可以设置 margin，垂直方向的 margin不会影响布局
+                / width：100px；
+                height：100px：'/
+                padding：100px；"/
+                border：100px solid red："       
+            
+
+            display用来设置元素显示的类型
+                可选值
+                inline将元素设置为行内元素
+                block将元素设置为块元素
+                inline- block将元素设置为行内块元素
+                行内块，既可以设置宽度和高度又不会独占一行
+                table将元素设置为一个表格
+                none元素不在页面中显示
+               
+            visibility用来设置元素的显示状态
+                可选值
+                visible默认值，元素在页面中正常显示
+                hid6en元素在页面中隐藏不显示，但是依然占据页面位置
+        
+        
+        
+        */
+
+        .box1{
+            background-color: #bfa;
+
+
+            margin-bottom: 100px;
+
+
+            
+
+            
+
+
+        }
+        .box2{
+            background-color: orange;
+            margin-top: -100px;
+        }
+        a{
+            width: 100px;
+            height: 100px;
+            background-color:orange;
+            display: block;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <a href="JavaScript:;">超链接</a>
+    <div class="box1"></div>
+    <div class="box2"></div>
+</body>
+</html>

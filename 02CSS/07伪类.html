@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+        将ul中第一个li设置为红色
+
+        伪类 
+            描述一个元素的特殊状态
+                比如 第一个子元素 被点击的元素
+            使用：开头
+                ：first-child
+                :last-child
+                :nth-child()
+                    n 所有
+                    2n 偶数位
+                    2n+1 奇数
+                以上伪类是根据所有子元素进行排序
+                :first-of-type
+                :last-of-type
+                :nth-of-type()
+
+                :not()
+        */
+        /*
+        ul>li:last-child{
+            color: red;
+        }
+        ul>li:nth-child(3){
+            color:tomato;
+        }
+        ul>li:first-child{
+            color:blue;
+        }
+        ul>li:nth-child(2n){
+            color:yellow;
+        }
+        */
+        ul>li:not(:nth-child(3)){
+            color: skyblue;
+        }
+    </style>
+</head>
+<body>
+
+  <ul>
+      <span>woshispan</span>
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>4</li>
+      <li>5</li>
+  </ul>
+    
+
+
+</body>
+</html>

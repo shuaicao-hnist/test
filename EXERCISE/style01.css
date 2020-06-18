@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.w,
+.topbar,
+.banner,
+.menu {
+  width: 17.325rem;
+  margin: 0 auto;
+}
+html {
+  font-size: 5.33333333vw;
+  background-color: #eff0f4;
+}
+.topbar a {
+  text-decoration: none;
+  color: #24253d;
+}
+ .topbar a i {
+  color: #999;
+}
+.topbar {
+  display: flex;
+  height: 4.375rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.banner img {
+  width: 100%;
+  height: 15rem;
+}
+.menu {
+  height: 8.225rem;
+  width: 17.325rem;
+  display: flex;
+  flex-flow: row wrap;
+}
+.menu a{
+ 
+  width: 327/40rem;
+  height: 104/40rem;
+
+}

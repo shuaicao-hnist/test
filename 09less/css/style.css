@@ -1,0 +1,15 @@
+body {
+  width: 200px;
+  height: 200px;
+}
+body div {
+  color: red;
+}
+.box5 {
+  width: 100px;
+  color: #bfa;
+}
+.box6 {
+  width: 100px;
+  background-image: url("box6/1.png");
+}

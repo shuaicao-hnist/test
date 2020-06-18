@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .outer{
+            border: 10px red solid;
+         
+          overflow: hidden;
+           /*
+             display: inline-block;
+             
+    可以通过一些特殊方式来开启元素的BFC
+        1.开启BFC的元素不会被浮动元素所覆盖
+        2.开启BFC的元素子元素和父元素外边距不会重叠
+        3.开启BFC的元素可以包含浮动的子元素
+            1、设置元素的浮动（不推荐
+            2、将元素设置为行内块元素（不推荐
+            3.将元素的overflow值设置为非visible的值
+            设置overflow-hidden开启其BFC以使其可以包含浮动元素
+                    */
+        }
+        .inner{
+            width: 100px;
+            height:500px;
+            background-color: #bfa;
+            float: left;
+        }
+        /*
+        高度塌陷的问题：
+        在浮动布局中，父元素的高度默认是被子元素撑开的
+            素浮动后，其会完全脱高文档流，子元素从文档流中脱离
+            将会无法撑起父元素的高度，导致父元素的高度丢失I
+            父元素高度丢失以后，其下的元素会自动上移，导致页面的布局混乱
+            所以高度塌陷是浮动布局中比较常见的一个问题，这个问题我们必须要进行处理！
+        
+        
+        */
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="inner"></div>
+    </div>
+
+</body>
+</html>

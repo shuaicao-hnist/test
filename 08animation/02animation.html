@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .box1{
+        width: 800px;
+        height: 800px;
+        background-color: silver;
+    }
+    .box2{
+        width: 100px;height: 100px;
+        background-color: #bfa;
+        /* transition: 2s; */
+        animation-name: identifier;
+        animation-duration: 4s;
+        /* animation-delay: 2s; */
+        /* animation- iteration- count动画执行的次数 */
+        animation-iteration-count: 2;
+         /* animation-direction
+                指定动画运行的方向
+                可选值
+                normal默认值从from向to运行每次都是这样
+                reverse从to向from运行每次都是这样
+                alternate从from向to运行重复执行动画时反向执行
+                alternate-reverse从to向from运行重复执行动画时反向执行 */
+        animation-direction: reverse;
+     
+        animation-fill-mode: none;
+        /* animation-fi11-mode：动画的填充模式
+            可选值
+            none默认值动画执行完毕元素回到原来位置
+            forwards动画执行完毕元素会停止在动画结束的位置
+            backwards动画延时等待时，元素就会处于开始位置
+            both结合了 forwards和 backward 
+        */
+    }
+     .box1:hover .box2{
+         
+      animation-play-state: paused;
+         /* animation-play- state：设置动画的执行状态
+                可选值
+                running默认值动画执行
+                paused动画暂停
+         */
+     } 
+     @keyframes identifier {
+         /* 动画开始 */
+         to{margin-left: 700px;}
+         /* 动画结束 */
+         from{margin-left:0px ;}
+         
+     }
+</style>
+</head>
+<body>
+    <div class="box1"><div class="box2">
+
+    </div></div>
+</body>
+</html>

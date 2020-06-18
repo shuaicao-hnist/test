@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>路径测试</title>
+</head>
+<body>
+
+    <!--
+        当我们需要跳转到服务器内部的页面时，一般我们都会使用相对路径
+            相对路径都会使用.或..开头
+            ./
+            ../
+            ./可以忽略不写 表示当前文件的所在目录
+                在这里当前页面就是 test09.html
+            ../表示当前文件所在目录的上一级目录
+    -->
+    <!--
+        target 属性 用来指定超链接打开的位置
+            可选值
+                _self 默认值 在当前网页打开链接
+                _blank 新打开网页
+    -->
+    <a href="#bottom">去底部</a>
+    <br> <br>
+
+    <a href="./inner/target2.html" target="_blank">超链接1</a>
+    <br><br>
+
+    <a href="../test01.html">超链接3</a>
+    <br><br>
+    
+    <a href="#p3">第三自然段</a>
+    <br><br>
+
+    <a href="#">占位符</a><!--在开发中可以将#作为占位符使用-->
+    <br><br>
+
+    <a href="javascript:;"> 不会跳转</a>
+    <br><br>
+
+    <a href="../outer/target03.html">超链接2</a>
+    <br><br>
+
+    <a href="../../CSS/01CSS简介.html"target="_blank">超链接5</a>
+    <br><br>
+
+
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni molestias repudiandae totam accusantium veritatis. Dolor numquam quasi inventore quidem eius sed neque aliquam dolores voluptatem. Accusantium velit illum eaque fugiat!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni molestias repudiandae totam accusantium veritatis. Dolor numquam quasi inventore quidem eius sed neque aliquam dolores voluptatem. Accusantium velit illum eaque fugiat!</p>
+        <p id="p3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni molestias repudiandae totam accusantium veritatis. Dolor numquam quasi inventore quidem eius sed neque aliquam dolores voluptatem. Accusantium velit illum eaque fugiat!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni molestias repudiandae totam accusantium veritatis. Dolor numquam quasi inventore quidem eius sed neque aliquam dolores voluptatem. Accusantium velit illum eaque fugiat!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni molestias repudiandae totam accusantium veritatis. Dolor numquam quasi inventore quidem eius sed neque aliquam dolores voluptatem. Accusantium velit illum eaque fugiat!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni molestias repudiandae totam accusantium veritatis. Dolor numquam quasi inventore quidem eius sed neque aliquam dolores voluptatem. Accusantium velit illum eaque fugiat!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni molestias repudiandae totam accusantium veritatis. Dolor numquam quasi inventore quidem eius sed neque aliquam dolores voluptatem. Accusantium velit illum eaque fugiat!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni molestias repudiandae totam accusantium veritatis. Dolor numquam quasi inventore quidem eius sed neque aliquam dolores voluptatem. Accusantium velit illum eaque fugiat!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni molestias repudiandae totam accusantium veritatis. Dolor numquam quasi inventore quidem eius sed neque aliquam dolores voluptatem. Accusantium velit illum eaque fugiat!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni molestias repudiandae totam accusantium veritatis. Dolor numquam quasi inventore quidem eius sed neque aliquam dolores voluptatem. Accusantium velit illum eaque fugiat!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni molestias repudiandae totam accusantium veritatis. Dolor numquam quasi inventore quidem eius sed neque aliquam dolores voluptatem. Accusantium velit illum eaque fugiat!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni molestias repudiandae totam accusantium veritatis. Dolor numquam quasi inventore quidem eius sed neque aliquam dolores voluptatem. Accusantium velit illum eaque fugiat!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni molestias repudiandae totam accusantium veritatis. Dolor numquam quasi inventore quidem eius sed neque aliquam dolores voluptatem. Accusantium velit illum eaque fugiat!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni molestias repudiandae totam accusantium veritatis. Dolor numquam quasi inventore quidem eius sed neque aliquam dolores voluptatem. Accusantium velit illum eaque fugiat!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni molestias repudiandae totam accusantium veritatis. Dolor numquam quasi inventore quidem eius sed neque aliquam dolores voluptatem. Accusantium velit illum eaque fugiat!</p>
+        
+        
+        
+        
+
+    <!--
+        可以将超链接的href属性设置为#，回到当前页面顶部
+            也可跳转到页面的指定位置，只需将href属性设置为 #目标元素的id属性值
+        id属性 唯一
+            每一个标签都可以添加一个id属性
+            id是元素的唯一标识 同一界面不能重复id属性
+    -->
+     
+
+        <a id="bottom" href="#">回到顶部</a>
+        <a href="#">占位符</a>
+
+</body>
+</html>

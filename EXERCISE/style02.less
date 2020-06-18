@@ -1,0 +1,93 @@
+.left-menu{
+    &:hover{.nav{
+        display: block;
+    }}
+         .nav{
+             display: none;
+            position: absolute;
+            /* width: 70px; */
+            /* top: 48px; */
+            background-color: #000;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            top: 48px;
+            display: none;
+            li{
+                width: 80%;
+                margin: 0 auto;
+                border-bottom: 1px solid #dbdbdb;
+                a{
+                    line-height: 44px;
+                    display: block;
+                    font-size: 14px;
+                  
+                        text-decoration: none;
+                        color: #ffffff;
+                   
+                   
+                }
+                span{
+                    text-decoration: none;
+                    color: #ffffff;
+                }
+                &:last-child a{
+                    display: inline-block;
+                 
+                }
+                
+            }
+        }
+  
+    .menu-icon {
+            
+            width: 18px;
+           height: 48px;
+           position: relative;
+     
+           li{
+            position: absolute;
+            transform-origin:left center;
+            transition: 0.5s;
+            height: 1px;
+            width: 18px;
+            background-color: #ffffff;
+       
+           }
+           li:nth-child(1){
+            top: 18px;
+        }
+        li:nth-child(2){
+            top: 23px;
+
+        }
+        li:nth-child(3){
+            top: 29px;
+        }
+
+        &:hover{
+            li:nth-child(1){
+                transform: rotateZ(35deg);
+            }
+            li:nth-child(2){
+                opacity: 0;
+            }
+            li:nth-child(3){
+                transform: rotateZ(-35deg);
+            }
+        }
+    }  
+}
+@media only screen{
+    @media (min-width:768px) {
+            .left-menu{
+                order: 2;
+            }
+            .logo{
+                order: 1;
+            }
+            .user-info{
+                order: 3;
+            }
+    }
+}

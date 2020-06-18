@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .outer{
+            height: 500px;
+            border-bottom: 10px solid black;
+            overflow: hidden;
+        }
+        .box1{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: #bfa;
+         
+            animation: ball 0.5s forwards ease-in infinite alternate;
+        }
+        @keyframes ball {
+            from{
+                margin-top: px;
+            }
+            to{
+                margin-top: 400px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+    <div class="box1"></div>
+</div>
+</body>
+</html>

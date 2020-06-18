@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+        /*
+        伪元素 表示页面中一些并不真实存在的元素
+            使用::开头
+            ::first-letter 第一个字母
+
+            ::first-line 第一行
+            :::selection 表示选中的内容
+            :::before 元素的开始
+            :::after元素的最后
+                结合content属性使用
+
+
+        */
+        p::first-letter{
+            font-size: 50px;
+
+        }
+        p::first-line{
+            background-color:yellowgreen;
+        }
+        p::selection{
+            color: skyblue;
+        }
+        div::before{
+            content: '~';
+        }
+        div::after{
+            content: '！';
+        }
+    </style>
+</head>
+<body>
+        <div>hhhhhhhha</div>
+        <p>
+           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio quaerat voluptatibus sapiente dolore sed fugiat totam repellat, ipsum ab obcaecati enim alias nam voluptatum maiores vel exercitationem autem quae soluta.
+        </p>
+</body>
+</html>

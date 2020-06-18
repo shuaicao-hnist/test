@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+        样式冲突
+            通过不同的选择器 选中相同的元素，并且为相同的样式设置不同的值时
+            此时由选择器的权重决定
+
+            
+
+            内联样式        1000
+            id选择器        100
+            类和伪类选择器   10
+            元素选择器      1
+            通配选择器      0
+            继承的样式      无
+
+            选择器的累加不会超过上一级的优先值
+            优先值相同 靠下的样式优先使用
+            若在某样式后加上！important，则优先级升至最高
+        
+        
+        
+        */
+            .red{
+                color: red;
+                background: skyblue;
+            }
+            #h{
+                color: blue;
+                background-color: tomato;
+            }
+
+
+    </style>
+</head>
+<body>
+             <div id ="h" class="di red d2">woshidiv</div>           
+    
+    
+    
+    
+        
+</body>
+</html>

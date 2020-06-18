@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新闻列表</title>
+    <link rel="stylesheet" href="../Layout/reset.css">
+
+    <style>
+        a{
+            text-decoration: none;
+        }
+        body{
+            background-color: #bfa;
+        }
+        .news-list{
+            width: 450px;
+            height:350px;
+            margin: 50px auto;
+            background-color: blanchedalmond;
+        }
+        .news-title {
+            /*为了边框和文字宽度一致，将h2 转换为行内块元素*/
+            display:inline-block;
+             height: 30px;  
+             /*设置高度*/
+             border-top: 1px red solid;
+             /*设置上边框*/
+             margin-top: -2px;
+             padding-top: 10px;
+        }
+        .news-img{
+            height: 200px;
+        }
+        /*设置title中超链接的样式*/
+        .news-title a {
+            color:black;
+            text-decoration:none;
+            font-weight:bold
+        }
+        a  .img-title{
+            color: #fff;
+            margin-top: -30px;
+            font-weight: bold;
+            padding-left: 20px;
+
+        }
+        .news-list2{
+            margin-top: -30px;
+            padding-left: 10px;
+        }
+        .news-list2 li{
+            margin-bottom: 17px;
+
+        }
+        .news-list2 li a{
+            font-size: 15px;
+            color: #666666;
+        }
+        .news-list2 li a:hover{
+            color: red;
+        }
+        .news-list2 li::before{
+            content: '~';
+            color: red;
+            margin-right: px;
+        }
+    
+            
+         
+      
+
+    </style>
+</head>
+<body>
+    
+    <!--创建新闻列表外侧容器 -->
+    <div class="news-list">
+
+        <h2 class="news-title">
+            <a href="#">图片</a>
+        </h2>
+
+        <!--创建图片容器-->
+        <div class="news-img">
+            <a href="#">
+                <img src="../EXERCISE/素材/01.jpg"width=200px alt="">
+                <h3 class="img-title">女人藏在树后</h3 >
+            </a>
+        </div>
+    
+        <ul class="news-list2">
+     
+            <li>
+                <a href="#">自从不知道哪个混混学生把LOL在里面带火之后</a>
+            </li>
+     
+            <li>
+                <a href="#">知乎的大多数人，都活在生活的阳光面。</a>
+            </li>
+       
+            <li>
+                <a href="#">任何在我15-35岁之间诞生的科技，都是改变世界的革命性产物</a>
+            </li>
+        
+            <li>
+                <a href="#">任何在我35岁之后诞生的科技，都是违反自然规律要遭天谴的</a>
+            </li>
+        </ul>
+    </div>    
+
+        
+
+        
+
+
+    
+    
+    
+    
+    
+    
+    
+</body>
+</html>
